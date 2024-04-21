@@ -136,7 +136,7 @@ export default function Sidebar({children}) {
                   justifyContent: open ? 'initial' : 'center',
                   px: 2.5,
                 }}
-                onClick = {() => navigate("/")}
+                onClick = {() => navigate("/dashboard")}
               >
                 <ListItemIcon
                   sx={{
