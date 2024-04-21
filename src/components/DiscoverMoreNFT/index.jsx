@@ -4,7 +4,7 @@ import styles from './style.module.css'
 function MoreNFTComponent() {
    return(
       <>
-      
+      Hello
       </>
    )
 }

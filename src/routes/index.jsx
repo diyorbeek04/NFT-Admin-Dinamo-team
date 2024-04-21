@@ -1,23 +1,12 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
-import NotFound from "../pages/notFound";
-import DashboardPages from "../pages/dashboard";
-import MoreNFTPage from "../pages/DiscoverMoreNFT";
-import TopCreatorsPage from "../pages/TopCreators";
-import Login from "../pages/Login";
-import ArtistPage from "../pages/artist";
-
-function RouteComponent() {
+import { Route, Routes } from "react-router-dom"
+import { dataRouter } from "./data"
+function RouterComponent() {
    return(
       <Routes>
-         <Route path="/*" element={<NotFound />}  />
-         <Route path="/dashboard" element={<DashboardPages />}  />
-         <Route path="/morenft" element={<MoreNFTPage />}  />
-         <Route path="/topcreators" element={<TopCreatorsPage />}  />
-         <Route path="/artist" element={<ArtistPage />}  />
-         <Route path="/" element={<Login />}  />
+         {dataRouter.map((elem, index) =>
+            <Route key={index} path={elem.path} element={elem.element} />            
+         )}
       </Routes>
    )
 }
-
-export default RouteComponent
+export default RouterComponent
