@@ -12,23 +12,23 @@ export const dataRouter = [
     },
     {
         id : 2,
-        path : "/dashboard",
-        element : <DashboardPages/>
+        path :  window.localStorage.getItem('AuthToken') && "/dashboard",
+        element : window.localStorage.getItem('AuthToken') && <DashboardPages/>
     },
     {
         id : 3,
-        path : "/moreNFT",
-        element : <MoreNFTPage/>
+        path :  window.localStorage.getItem('AuthToken') && "/moreNFT",
+        element : window.localStorage.getItem('AuthToken') && <MoreNFTPage/>
     },
     {
         id : 4,
-        path : "/topcreators",
-        element : <TopCreatorsPage/>
+        path :  window.localStorage.getItem('AuthToken') && "/topcreators",
+        element : window.localStorage.getItem('AuthToken') && <TopCreatorsPage/>
     },
     {
         id : 5,
-        path : "/artist",
-        element : <ArtistPage/>
+        path :  window.localStorage.getItem('AuthToken') && "/artist",
+        element : window.localStorage.getItem('AuthToken') && <ArtistPage/>
     },
     {
         id : 6,
