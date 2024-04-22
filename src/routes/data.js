@@ -28,7 +28,9 @@ export const dataRouter = [
     {
         id : 5,
         path : "/artist",
-        element : <ArtistPage/>
+        element : <ArtistPage/>,
+        path :  window.localStorage.getItem('AuthToken') && "/dashboard",
+        element : window.localStorage.getItem('AuthToken') && <DashboardPages/>
     },
     {
         id : 6,

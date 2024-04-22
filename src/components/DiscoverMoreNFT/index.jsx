@@ -12,6 +12,14 @@ const NFTcards = () => {
   const descRef = useRef();
   const priceRef = useRef();
   const salesRef = useRef();
+  
+function MoreNFTComponent() {
+   return(
+      <>
+      Hello
+      </>
+   )
+}
 
   useEffect(() => {
     axios.get('http://localhost:8000/DiscoverMoreNFT')
