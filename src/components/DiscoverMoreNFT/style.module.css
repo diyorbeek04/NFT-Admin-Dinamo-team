@@ -4,7 +4,7 @@
     padding: 0 10px;
 }
 
-.card{
+.card {
     width: 100%;
     background-color: rgb(30, 30, 30);
     padding: 16px;
@@ -14,15 +14,17 @@
     justify-content: space-between;
     margin-bottom: 20px;
 }
-.card__left__item{
+
+.card__left__item {
     background-color: rgb(43, 43, 43);
     margin-bottom: 15px;
     padding: 10px;
     width: 250px;
     height: 40px;
     border-radius: 10px;
-    
+
 }
+
 .img {
     width: 20%;
     height: 210px;
@@ -32,26 +34,26 @@
 .card__h2 {
     font-size: 18px;
     font-family: Space Mono;
-    color:white;
+    color: white;
 }
 
 .card__p {
     font-size: 18px;
     font-family: Space Mono;
-      color:white;
+    color: white;
 }
 
 
 .h2 {
     font-size: 18px;
     font-family: Space Mono;
-      color:white;
+    color: white;
 }
 
 .card__span {
     font-size: 18px;
     font-family: Space Mono;
-      color:white;
+    color: white;
 }
 
 .card__bottom {
@@ -65,12 +67,13 @@
     border-radius: 16px;
     background-color: rgb(43, 43, 43);
     border: none;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 18px;
     font-family: Space Mono;
-      color:white;
+    color: white;
 }
-.modal__item{
+
+.modal__item {
     display: flex;
     justify-content: end;
 }
@@ -87,6 +90,7 @@
     opacity: 0.8;
 
 }
+
 .modal {
     position: fixed;
     padding: 30px;
@@ -100,7 +104,32 @@
     top: 200px;
     bottom: 0;
 }
-.input{
+.card__modal{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.form {
+    width: 100%;
+}
+
+.input__top {
+    background-color: rgb(43, 43, 43);
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 40%;
+    height: 50px;
+    border-radius: 10px;
+    display: block;
+    font-size: 22px;
+    font-family: Space Mono;
+    color: white;
+}
+
+.input {
     width: 80%;
     border: 2px solid rgb(102, 102, 102);
     border-radius: 8px;
@@ -108,12 +137,23 @@
     display: block;
     margin-bottom: 15px;
 }
-
-.modal__button{
-    width: 70px; 
+.card__modal__button{
+    width: 180px;
+    height: 50px;
+    border-radius: 16px;
+    background-color: rgb(43, 43, 43);
+    border: none;
+    font-size: 18px;
+    font-family: Space Mono;
+    color:white;
+    text-align: center;
+    margin-left: 470px;
+}
+.modal__button {
+    width: 70px;
     height: 30px;
-    background-color:black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    font-family: Space Mono;
     margin-left: 20px;
     border-radius: 5px;
     color: aliceblue;

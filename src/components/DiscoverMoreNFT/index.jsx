@@ -5,7 +5,7 @@ import ClearIcon from '@mui/icons-material/Clear';
 
 const NFTcards = () => {
   const [tasks, setTasks] = useState([]);
-  const [taskToEdit, setTaskToEdit] = useState(null);
+  const [taskToEdit, setTaskToEdit] = useState();
   const [open, setOpen] = useState(false);
   const imgRef = useRef();
   const titleRef = useRef();
@@ -18,6 +18,7 @@ const NFTcards = () => {
       .then(res => setTasks(res.data))
       .catch(err => console.error('Error fetching data:', err));
   }, []);
+
 
   const handleEdit = (task) => {
     setTaskToEdit(task);
@@ -58,6 +59,19 @@ const NFTcards = () => {
     <>
       <div className={Styles.section}>
         <div className={Styles.container}>
+          <div className={Styles.card}>
+            <form className={Styles.form}>
+              <div className={Styles.card__modal}>
+                <input className={Styles.input__top} ref={imgRef} type='url' placeholder='Rasm' />
+                <input className={Styles.input__top} ref={titleRef} type='text' placeholder='Title' />
+              </div>
+              <div className={Styles.card__modal}>
+                <input className={Styles.input__top} ref={descRef} type='text' placeholder='Description' />
+                <input className={Styles.input__top} ref={salesRef} type='number' placeholder='Sales' />
+              </div>
+              <button className={Styles.card__modal__button}>Qo'shish</button>
+            </form>
+          </div>
           {tasks.map((task, index) => (
             <div key={index} className={Styles.card}>
               <img className={Styles.img} src={task.NFTImage} alt="" />
@@ -81,7 +95,6 @@ const NFTcards = () => {
                 </div>
               </div>
               <div className={Styles.card__right}>
-                <button className={Styles.card__button}>Post qo'shish</button>
                 <button className={Styles.card__button} onClick={() => handleEdit(task)}>Edit</button>
                 <button className={Styles.card__button} onClick={() => handleDelete(task.id)}>Delete</button>
               </div>
