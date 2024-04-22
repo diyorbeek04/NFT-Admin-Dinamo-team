@@ -14,7 +14,43 @@
     justify-content: space-between;
     margin-bottom: 20px;
 }
+.card__modal{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.form {
+    width: 100%;
+}
 
+.input__top {
+    background-color: rgb(43, 43, 43);
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 40%;
+    height: 50px;
+    border-radius: 10px;
+    display: block;
+    font-size: 22px;
+    font-family: Space Mono;
+    color: white;
+}
+
+.card__modal__button{
+    width: 180px;
+    height: 50px;
+    border-radius: 16px;
+    background-color: rgb(43, 43, 43);
+    border: none;
+    font-size: 18px;
+    font-family: Space Mono;
+    color:white;
+    text-align: center;
+    margin-left: 470px;
+}
 .card__left__item {
     background-color: rgb(43, 43, 43);
     margin-bottom: 15px;
@@ -104,31 +140,6 @@
     top: 200px;
     bottom: 0;
 }
-.card__modal{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    padding: 20px;
-}
-.form {
-    width: 100%;
-}
-
-.input__top {
-    background-color: rgb(43, 43, 43);
-    margin-bottom: 15px;
-    padding: 10px;
-    width: 40%;
-    height: 50px;
-    border-radius: 10px;
-    display: block;
-    font-size: 22px;
-    font-family: Space Mono;
-    color: white;
-}
-
 .input {
     width: 80%;
     border: 2px solid rgb(102, 102, 102);
@@ -136,18 +147,6 @@
     padding: 5px;
     display: block;
     margin-bottom: 15px;
-}
-.card__modal__button{
-    width: 180px;
-    height: 50px;
-    border-radius: 16px;
-    background-color: rgb(43, 43, 43);
-    border: none;
-    font-size: 18px;
-    font-family: Space Mono;
-    color:white;
-    text-align: center;
-    margin-left: 470px;
 }
 .modal__button {
     width: 70px;
